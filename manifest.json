@@ -1,0 +1,21 @@
+[
+    {
+        "guid": "5a63fe63-765f-43f7-a129-661e839f83d5",
+        "name": "SmartPlaylist2PlaylistHarder",
+        "description": "Smart Playlist 2 Playlist Harder!. Is a system to automatically generate playlists based on a set of rules. Built off of the base of SmartPlaylist by ankenyr.\n",
+        "overview": "Smart Playlist 2 Playlist Harder! Is a system to automatically generate playlists based on a set of rules\nBuilt off of the base of SmartPlaylist by ankenyr",
+        "owner": "JMiles42",
+        "category": "Playlist",
+        "versions": [
+            {
+                "version": "1.0.0.0",
+                "changelog": " ### Code or Repo Maintenance ###\n - Inital",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/JMiles42/Jellyfin-Plugins/smartplaylist2playlistharder/smartplaylist2playlistharder_1.0.0.0.zip",
+                "checksum": "f0ba7590b13682c770c7cb732ca13271",
+                "timestamp": "2023-04-03T09:54:36Z"
+            }
+        ],
+        "imageUrl": ""
+    }
+]

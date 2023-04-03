@@ -6,7 +6,16 @@
         "overview": "Smart Playlist 2 Playlist Harder! Is a system to automatically generate playlists based on a set of rules\nBuilt off of the base of SmartPlaylist by ankenyr",
         "owner": "JMiles42",
         "category": "Playlist",
+        "imageUrl": "",
         "versions": [
+            {
+                "version": "1.0.1.0",
+                "changelog": "Added a few new fields to use in expressions",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.0.1.0/smartplaylist2playlistharder.zip",
+                "checksum": "f5375b96404070f8b5377a4a935e3d34",
+                "timestamp": "2023-04-03T14:05:16Z"
+            },
             {
                 "version": "1.0.0.0",
                 "changelog": " ### Code or Repo Maintenance ###\n - Inital",
@@ -15,7 +24,6 @@
                 "checksum": "f0ba7590b13682c770c7cb732ca13271",
                 "timestamp": "2023-04-03T09:54:36Z"
             }
-        ],
-        "imageUrl": ""
+        ]
     }
 ]

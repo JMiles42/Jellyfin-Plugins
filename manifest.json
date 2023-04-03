@@ -9,12 +9,12 @@
         "imageUrl": "",
         "versions": [
             {
-                "version": "1.0.1.0",
+                "version": "1.1.0.0",
                 "changelog": "Added a few new fields to use in expressions",
                 "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.0.1.0/smartplaylist2playlistharder.zip",
-                "checksum": "f5375b96404070f8b5377a4a935e3d34",
-                "timestamp": "2023-04-03T14:05:16Z"
+                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.1.0.0/smartplaylist2playlistharder.zip",
+                "checksum": "e7fa7ec47fccebf4c6e807c1d8e898fb",
+                "timestamp": "2023-04-03T14:31:04Z"
             },
             {
                 "version": "1.0.0.0",

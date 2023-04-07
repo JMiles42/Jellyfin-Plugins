@@ -9,6 +9,14 @@
         "imageUrl": "",
         "versions": [
             {
+                "version": "1.2.0.0",
+                "changelog": "Made changes to playlist IO, added days ago properties",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.2.0.0/smartplaylist2playlistharder.zip",
+                "checksum": "d02e2749fd562c5f304387dc550bed86",
+                "timestamp": "2023-04-07T12:55:40Z"
+            },
+            {
                 "version": "1.1.0.0",
                 "changelog": "Added a few new fields to use in expressions",
                 "targetAbi": "10.8.0.0",

@@ -49,5 +49,23 @@
                 "timestamp": "2023-04-03T09:54:36Z"
             }
         ]
+    },
+    {
+        "guid": "e1204173-3802-4d53-980e-9d1b851fde84",
+        "name": "YouTube Metadata 2 YouTube Horder",
+        "description": "Provides YouTube metadata from the YouTube API and Youtube-dlp metadata files.",
+        "overview": "YouTube metadata provider",
+        "owner": "JMiles42",
+        "category": "Metadata",
+        "versions": [
+            {
+                "version": "1.1.0.1",
+                "changelog": "Inital Fork + Build fix",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v1.1.0.1/youtube-metadata-2-youtube-horder_1.1.0.1.zip",
+                "checksum": "3e4a9f326569aea3610bc4ef74902902",
+                "timestamp": "2023-04-11T14:48:28Z"
+            }
+        ]
     }
 ]

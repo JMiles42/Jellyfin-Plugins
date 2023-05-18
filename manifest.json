@@ -2,12 +2,20 @@
     {
         "guid": "5a63fe63-765f-43f7-a129-661e839f83d5",
         "name": "SmartPlaylist2PlaylistHarder",
-        "description": "Smart Playlist 2 Playlist Harder!. Is a system to automatically generate playlists based on a set of rules. Built off of the base of SmartPlaylist by ankenyr.\n",
+        "description": "Smart Playlist 2 Playlist Harder!.\nIs a system to automatically generate playlists based on a set of rules.\nBuilt off of the base of SmartPlaylist by ankenyr.\n",
         "overview": "Smart Playlist 2 Playlist Harder! Is a system to automatically generate playlists based on a set of rules\nBuilt off of the base of SmartPlaylist by ankenyr",
         "owner": "JMiles42",
         "category": "Playlist",
         "imageUrl": "",
         "versions": [
+            {
+                "version": "1.5.0.0",
+                "changelog": "Moved Operators to separate files\nAdded logger to SmartPlaylistFileSystem\nRenamed Expression to SmartPlExpression so it no longer conflicts with Linq\nAdded CompiledRule type, to replace nested generics where possible\nAdded new Random Orderer, it you want a random order that is not relevent to any of the items data\nChanged DefaultTrigger from 30 minutes to 6 hours.\nAdded new IsNull operator\nImplemented MaxItems\nAdded New Operand properties\n -ParentName\n -GrandparentName\n -Container\nNote:  ParentName & GrandparentName are WIP and have only been tested with a library of episodes.",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.5.0.0/smartplaylist2playlistharder.zip",
+                "checksum": "0a9d22305eb8ee0df076918ae2b7b713",
+                "timestamp": "2023-05-18T16:41:51Z"
+            },
             {
                 "version": "1.4.0.0",
                 "changelog": "Updated Ordering",
@@ -53,11 +61,19 @@
     {
         "guid": "e1204173-3802-4d53-980e-9d1b851fde84",
         "name": "YouTube Metadata 2 YouTube Horder",
-        "description": "Provides YouTube metadata from the YouTube API and Youtube-dlp metadata files.",
+        "description": "Provides YouTube metadata from the YouTube API and Youtube-dlp metadata files.\n",
         "overview": "YouTube metadata provider",
         "owner": "JMiles42",
         "category": "Metadata",
         "versions": [
+            {
+                "version": "1.1.1.0",
+                "changelog": "improved finding local info.json files\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v1.1.1.0/youtube-metadata-2-youtube-horder_1.1.1.0.zip",
+                "checksum": "7401154206b2960699e20d43bed7b34e",
+                "timestamp": "2023-05-18T16:57:33Z"
+            },
             {
                 "version": "1.1.0.2",
                 "changelog": "Minor logging additions",

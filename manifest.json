@@ -9,6 +9,14 @@
         "imageUrl": "",
         "versions": [
             {
+                "version": "1.6.1.0",
+                "changelog": "Added Tags\nFixed Timespan operations\nMoved Operators to separate files\nAdded logger to SmartPlaylistFileSystem\nRenamed Expression to SmartPlExpression so it no longer conflicts with Linq\nAdded CompiledRule type, to replace nested generics where possible\nAdded new Random Orderer, it you want a random order that is not relevent to any of the items data\nChanged DefaultTrigger from 30 minutes to 6 hours.\nAdded new IsNull operator\nImplemented MaxItems\nAdded New Operand properties\n -ParentName\n -GrandparentName\n -Container\nNote:  ParentName & GrandparentName are WIP and have only been tested with a library of episodes.",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.6.1.0/smartplaylist2playlistharder_1.6.1.0.zip",
+                "checksum": "2cdf04aedd57ac1ee06b068278b1e203",
+                "timestamp": "2023-12-03T02:35:51Z"
+            },
+            {
                 "version": "1.5.0.0",
                 "changelog": "Moved Operators to separate files\nAdded logger to SmartPlaylistFileSystem\nRenamed Expression to SmartPlExpression so it no longer conflicts with Linq\nAdded CompiledRule type, to replace nested generics where possible\nAdded new Random Orderer, it you want a random order that is not relevent to any of the items data\nChanged DefaultTrigger from 30 minutes to 6 hours.\nAdded new IsNull operator\nImplemented MaxItems\nAdded New Operand properties\n -ParentName\n -GrandparentName\n -Container\nNote:  ParentName & GrandparentName are WIP and have only been tested with a library of episodes.",
                 "targetAbi": "10.8.0.0",

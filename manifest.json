@@ -9,6 +9,14 @@
         "imageUrl": "",
         "versions": [
             {
+                "version": "1.6.3.1",
+                "changelog": "Removed IsValid from being saved into the json file\nFixed removing of OperandMember.Name from saving to json\nAdded Tags to OperandMember\nRe-added progress tracking\nAdded Tags\nFixed Timespan operations\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.6.3.1/smartplaylist2playlistharder/smartplaylist2playlistharder_1.6.3.1.zip",
+                "checksum": "cf8e8a35e450e81ded216f8ce62041d0",
+                "timestamp": "2023-12-03T04:15:37Z"
+            },
+            {
                 "version": "1.6.3.0",
                 "changelog": "Fixed removing of OperandMember.Name from saving to json\nAdded Tags to OperandMember\nRe-added progress tracking\nAdded Tags\nFixed Timespan operations\n",
                 "targetAbi": "10.8.0.0",

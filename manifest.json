@@ -9,6 +9,14 @@
     "imageUrl": "",
     "versions": [
       {
+        "version": "2.1.1.2",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v2.1.1.2/Jellyfin.SmartPlaylist@v2.1.1.2.zip",
+        "checksum": "2033E43C4461F5159E7C9DCA9539C91F",
+        "timestamp": "2024-07-06T18:49:23Z"
+      },
+      {
         "version": "2.1.1.1",
         "changelog": "Auto Released by Actions",
         "targetAbi": "10.9.0.0",

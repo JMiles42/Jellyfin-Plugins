@@ -13,14 +13,14 @@
 
  $fileHash = Get-FileHash $filename -Algorithm MD5;
  $url = "$pluginRepoUrl/releases/download/v$version/$pluginZipName@v$version.zip";
- $newVersionEntry = @{
-     checksum   = $fileHash.Hash
-     changelog  = $changelog
-     targetAbi  = $targetAbi
-     sourceUrl  = $url
-     timestamp  = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
-     version    = $version
- };
+ $newVersionEntry = [ordered]@{
+    version    = $version
+    changelog  = $changelog
+    targetAbi  = $targetAbi
+    sourceUrl  = $url   
+    checksum   = $fileHash.Hash
+    timestamp  = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")     
+};
 
  $val = $manifestJson[0] | where-object { $_.guid -eq $pluginGuid }
  $val.versions = @($newVersionEntry) + $val.versions;

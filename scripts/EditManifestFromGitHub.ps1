@@ -24,7 +24,7 @@
  };
 
  $val = $manifestJson[0] | where-object { $_.guid -eq $pluginGuid }
- $val.versions.Insert(0, $newVersionEntry);
+ $val.versions = @($newVersionEntry) + $val.versions;
 
  $manifestJson | ConvertTo-Json -Depth 10 | Set-Content -Path $manfestFileName;
 

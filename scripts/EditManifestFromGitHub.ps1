@@ -27,7 +27,7 @@
      timestamp  = $timestamp
  };
 
- $val = $manifestJson[0] | where-object { $_.guid -eq $pluginGuid }
+ $val = $manifestJson | where-object { $_.guid -eq $pluginGuid }
  $val.versions = @($newVersionEntry) + $val.versions;
 
  $manifestJson | ConvertTo-Json -Depth 10 | Set-Content -Path $manifestFileName;

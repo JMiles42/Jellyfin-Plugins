@@ -4,10 +4,14 @@
      [string]$pluginGuid,
      [string]$filename,
      [string]$version,
-     [string]$targetAbi = '10.9.0.0',
+     [string]$targetAbi,
+     [string]$timestamp = $null,
      [string]$manifestFile = "manifest.json",
      [string]$changelog = 'Auto Released by Actions'
  )
+ if([string]::IsNullOrEmpty($timestamp)){
+    $timestamp = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
+ }
 
  $manifestJson = Get-Content $manifestFile | Out-String | ConvertFrom-Json;
 
@@ -19,7 +23,7 @@
     targetAbi  = $targetAbi
     sourceUrl  = $url   
     checksum   = $fileHash.Hash
-    timestamp  = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")     
+    timestamp  = $timestamp
 };
 
  $val = $manifestJson[0] | where-object { $_.guid -eq $pluginGuid }

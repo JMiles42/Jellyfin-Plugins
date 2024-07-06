@@ -1,167 +1,175 @@
 [
-    {
-        "guid": "5a63fe63-765f-43f7-a129-661e839f83d5",
-        "name": "SmartPlaylist2PlaylistHarder",
-        "description": "Smart Playlist 2 Playlist Harder!.\nIs a system to automatically generate playlists based on a set of rules.\nBuilt off of the base of SmartPlaylist by ankenyr.\n",
-        "overview": "Smart Playlist 2 Playlist Harder! Is a system to automatically generate playlists based on a set of rules\nBuilt off of the base of SmartPlaylist by ankenyr",
-        "owner": "JMiles42",
-        "category": "Playlist",
-        "imageUrl": "",
-        "versions": [
-            {
-                "version": "2.1.1.0",
-                "changelog": "Fixed json parsing - Running unit tests after a major upgrade turns out to be a good idea.\nUpdated to .net 8 and Jellyfin 10.9.0\nv2.* Changes have been made to the JSON schema, old files should still be read correctly, and when saved will use the new format.\nAdded a Jobs page to the dashboard, to allow an admin to see the status of the playlist generation, it will include errors if they failed.\nChanged TargetValue, to be one or many values. You can either have it a  single json value like a string, number or bool. Or an array of values. This allows a single Expression to match multiple values, rather then needing many single Expressions.\nAdded a MatchMode option, to allow selection of how sets of values are considered to be valid.\n  Modes are, Any, All, OnlyOne, AllButOne, None, Half, HalfOrMore, HalfOrLess.\n  Defualts \n   SmartPlaylist is Any, meaning as long as one ExpressionSet matches the item is included.\n   ExpressionSet is All, meaning all Expressions must match for the item to be included.\n   Expression is Any, meaning only one of the TargetValues must match for the item to be included.\nAdded config options to the Plugin config page.\n  Options include\n    PlaylistBatchedProcessing - Batch playlists by user and ItemKinds, allows processing of multiple playlits at once (may have performace impacts)\n    PlaylistDetailedErrors - Show the whole StackTrace of an error on the jobs details page.\n    AlwaysSaveFile - Always save the json file, when processing the playlist.\n    BackupFileOnSave - Backup files on save\n    PlaylistFolderName - Allow you to specify the folder within the Jellyfin Data folder to store playlists\n    PlaylistBackupFolderName - Allow you to specify the folder within the Jellyfin Data folder to store backups playlists\n    PlaylistSorterThreadCount - Set the thread count for how many Items are processed in parallel\n    ",
-                "targetAbi": "10.9.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v2.1.1.0/smartplaylist2playlistharder_2.1.1.0.zip",
-                "checksum": "4c3b5c46cab6246215dfd59696e3c288",
-                "timestamp": "2024-05-16T10:03:03Z"
-            },
-            {
-                "version": "2.1.0.0",
-                "changelog": "Updated to .net 8 and Jellyfin 10.9.0\nv2.* Changes have been made to the JSON schema, old files should still be read correctly, and when saved will use the new format.\nAdded a Jobs page to the dashboard, to allow an admin to see the status of the playlist generation, it will include errors if they failed.\nChanged TargetValue, to be one or many values. You can either have it a  single json value like a string, number or bool. Or an array of values. This allows a single Expression to match multiple values, rather then needing many single Expressions.\nAdded a MatchMode option, to allow selection of how sets of values are considered to be valid.\n  Modes are, Any, All, OnlyOne, AllButOne, None, Half, HalfOrMore, HalfOrLess.\n  Defualts \n   SmartPlaylist is Any, meaning as long as one ExpressionSet matches the item is included.\n   ExpressionSet is All, meaning all Expressions must match for the item to be included.\n   Expression is Any, meaning only one of the TargetValues must match for the item to be included.\nAdded config options to the Plugin config page.\n  Options include\n    PlaylistBatchedProcessing - Batch playlists by user and ItemKinds, allows processing of multiple playlits at once (may have performace impacts)\n    PlaylistDetailedErrors - Show the whole StackTrace of an error on the jobs details page.\n    AlwaysSaveFile - Always save the json file, when processing the playlist.\n    BackupFileOnSave - Backup files on save\n    PlaylistFolderName - Allow you to specify the folder within the Jellyfin Data folder to store playlists\n    PlaylistBackupFolderName - Allow you to specify the folder within the Jellyfin Data folder to store backups playlists\n    PlaylistSorterThreadCount - Set the thread count for how many Items are processed in parallel\n    ",
-                "targetAbi": "10.9.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v2.1.0.0/smartplaylist2playlistharder_2.1.0.0.zip",
-                "checksum": "b870d3069c422f7ca39cf76c203724e3",
-                "timestamp": "2024-05-12T11:52:56Z"
-            },
-            {
-                "version": "2.0.1.0",
-                "changelog": "v2.0.1 Added more Operand Properties\nv2.* Changes have been made to the JSON schema, old files should still be read correctly, and when saved will use the new format.\nAdded a Jobs page to the dashboard, to allow an admin to see the status of the playlist generation, it will include errors if they failed.\nChanged TargetValue, to be one or many values. You can either have it a  single json value like a string, number or bool. Or an array of values. This allows a single Expression to match multiple values, rather then needing many single Expressions.\nAdded a MatchMode option, to allow selection of how sets of values are considered to be valid.\n  Modes are, Any, All, OnlyOne, AllButOne, None, Half, HalfOrMore, HalfOrLess.\n  Defualts \n   SmartPlaylist is Any, meaning as long as one ExpressionSet matches the item is included.\n   ExpressionSet is All, meaning all Expressions must match for the item to be included.\n   Expression is Any, meaning only one of the TargetValues must match for the item to be included.\nAdded config options to the Plugin config page.\n  Options include\n    PlaylistBatchedProcessing - Batch playlists by user and ItemKinds, allows processing of multiple playlits at once (may have performace impacts)\n    PlaylistDetailedErrors - Show the whole StackTrace of an error on the jobs details page.\n    AlwaysSaveFile - Always save the json file, when processing the playlist.\n    BackupFileOnSave - Backup files on save\n    PlaylistFolderName - Allow you to specify the folder within the Jellyfin Data folder to store playlists\n    PlaylistBackupFolderName - Allow you to specify the folder within the Jellyfin Data folder to store backups playlists\n    PlaylistSorterThreadCount - Set the thread count for how many Items are processed in parallel\n    ",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v2.0.1.0/smartplaylist2playlistharder_2.0.1.0.zip",
-                "checksum": "0fc215dd5265293e53492b6d9c2a704f",
-                "timestamp": "2024-04-18T12:51:42Z"
-            },
-            {
-                "version": "2.0.0.0",
-                "changelog": "v2.* Changes have been made to the JSON schema, old files should still be read correctly, and when saved will use the new format.\nAdded a Jobs page to the dashboard, to allow an admin to see the status of the playlist generation, it will include errors if they failed.\nChanged TargetValue, to be one or many values. You can either have it a  single json value like a string, number or bool. Or an array of values. This allows a single Expression to match multiple values, rather then needing many single Expressions.\nAdded a MatchMode option, to allow selection of how sets of values are considered to be valid.\n  Modes are, Any, All, OnlyOne, AllButOne, None, Half, HalfOrMore, HalfOrLess.\n  Defualts \n   SmartPlaylist is Any, meaning as long as one ExpressionSet matches the item is included.\n   ExpressionSet is All, meaning all Expressions must match for the item to be included.\n   Expression is Any, meaning only one of the TargetValues must match for the item to be included.\nAdded config options to the Plugin config page.\n  Options include\n    PlaylistBatchedProcessing - Batch playlists by user and ItemKinds, allows processing of multiple playlits at once (may have performace impacts)\n    PlaylistDetailedErrors - Show the whole StackTrace of an error on the jobs details page.\n    AlwaysSaveFile - Always save the json file, when processing the playlist.\n    BackupFileOnSave - Backup files on save\n    PlaylistFolderName - Allow you to specify the folder within the Jellyfin Data folder to store playlists\n    PlaylistBackupFolderName - Allow you to specify the folder within the Jellyfin Data folder to store backups playlists\n    PlaylistSorterThreadCount - Set the thread count for how many Items are processed in parallel\n    ",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v2.0.0.0/smartplaylist2playlistharder_2.0.0.0.zip",
-                "checksum": "0bf0247fda0e3c4bceb33f54998c746e",
-                "timestamp": "2024-03-09T07:19:08Z"
-            },
-            {
-                "version": "1.6.3.1",
-                "changelog": "Removed IsValid from being saved into the json file\nFixed removing of OperandMember.Name from saving to json\nAdded Tags to OperandMember\nRe-added progress tracking\nAdded Tags\nFixed Timespan operations\n",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.6.3.1/smartplaylist2playlistharder_1.6.3.1.zip",
-                "checksum": "cf8e8a35e450e81ded216f8ce62041d0",
-                "timestamp": "2023-12-03T04:15:37Z"
-            },
-            {
-                "version": "1.6.3.0",
-                "changelog": "Fixed removing of OperandMember.Name from saving to json\nAdded Tags to OperandMember\nRe-added progress tracking\nAdded Tags\nFixed Timespan operations\n",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.6.3.1/smartplaylist2playlistharder_1.6.3.0.zip",
-                "checksum": "b6a2ff44ddf7fd67d0bc84193e4cbabd",
-                "timestamp": "2023-12-03T03:57:32Z"
-            },
-            {
-                "version": "1.6.2.0",
-                "changelog": "Re-added progress tracking\nAdded Tags\nFixed Timespan operations\n",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.6.2.0/smartplaylist2playlistharder_1.6.2.0.zip",
-                "checksum": "7c9194bff98d21be0cd337ee6ac189a6",
-                "timestamp": "2023-12-03T03:04:53Z"
-            },
-            {
-                "version": "1.6.1.0",
-                "changelog": "Added Tags\nFixed Timespan operations\nMoved Operators to separate files\nAdded logger to SmartPlaylistFileSystem\nRenamed Expression to SmartPlExpression so it no longer conflicts with Linq\nAdded CompiledRule type, to replace nested generics where possible\nAdded new Random Orderer, it you want a random order that is not relevent to any of the items data\nChanged DefaultTrigger from 30 minutes to 6 hours.\nAdded new IsNull operator\nImplemented MaxItems\nAdded New Operand properties\n -ParentName\n -GrandparentName\n -Container\nNote:  ParentName & GrandparentName are WIP and have only been tested with a library of episodes.",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.6.1.0/smartplaylist2playlistharder.zip",
-                "checksum": "2cdf04aedd57ac1ee06b068278b1e203",
-                "timestamp": "2023-12-03T02:35:51Z"
-            },
-            {
-                "version": "1.5.0.0",
-                "changelog": "Moved Operators to separate files\nAdded logger to SmartPlaylistFileSystem\nRenamed Expression to SmartPlExpression so it no longer conflicts with Linq\nAdded CompiledRule type, to replace nested generics where possible\nAdded new Random Orderer, it you want a random order that is not relevent to any of the items data\nChanged DefaultTrigger from 30 minutes to 6 hours.\nAdded new IsNull operator\nImplemented MaxItems\nAdded New Operand properties\n -ParentName\n -GrandparentName\n -Container\nNote:  ParentName & GrandparentName are WIP and have only been tested with a library of episodes.",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.5.0.0/smartplaylist2playlistharder.zip",
-                "checksum": "0a9d22305eb8ee0df076918ae2b7b713",
-                "timestamp": "2023-05-18T16:41:51Z"
-            },
-            {
-                "version": "1.4.0.0",
-                "changelog": "Updated Ordering",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.4.0.0/smartplaylist2playlistharder.zip",
-                "checksum": "5dbdb6611ae687cb878a4eae2656168a",
-                "timestamp": "2023-04-10T14:48:58Z"
-            },
-            {
-                "version": "1.3.0.0",
-                "changelog": "Further improvments to playlist IO, + more fields",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.3.0.0/smartplaylist2playlistharder.zip",
-                "checksum": "ac60826608e6d6658075d4de1a14321b",
-                "timestamp": "2023-04-09T07:55:32Z"
-            },
-            {
-                "version": "1.2.0.0",
-                "changelog": "Made changes to playlist IO, added days ago properties",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.2.0.0/smartplaylist2playlistharder.zip",
-                "checksum": "d02e2749fd562c5f304387dc550bed86",
-                "timestamp": "2023-04-07T12:55:40Z"
-            },
-            {
-                "version": "1.1.0.0",
-                "changelog": "Added a few new fields to use in expressions",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.1.0.0/smartplaylist2playlistharder.zip",
-                "checksum": "e7fa7ec47fccebf4c6e807c1d8e898fb",
-                "timestamp": "2023-04-03T14:31:04Z"
-            },
-            {
-                "version": "1.0.0.0",
-                "changelog": " ### Code or Repo Maintenance ###\n - Inital",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.0.0.0/smartplaylist2playlistharder.zip",
-                "checksum": "f0ba7590b13682c770c7cb732ca13271",
-                "timestamp": "2023-04-03T09:54:36Z"
-            }
-        ]
-    },
-    {
-        "guid": "e1204173-3802-4d53-980e-9d1b851fde84",
-        "name": "YouTube Metadata 2 YouTube Horder",
-        "description": "Provides YouTube metadata from the YouTube API and Youtube-dlp metadata files.\n",
-        "overview": "YouTube metadata provider",
-        "owner": "JMiles42",
-        "category": "Metadata",
-        "versions": [
-            {
-                "version": "1.2.0.0",
-                "changelog": "Updated to .net 8 and Jellyfin 10.9.0\nimproved finding local info.json files\n",
-                "targetAbi": "10.9.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v1.2.0.0/youtube-metadata-2-youtube-horder_1.2.0.0.zip",
-                "checksum": "eae4cabd017b061caffa9febba5276bf",
-                "timestamp": "2024-05-12T11:53:44Z"
-            },
-            {
-                "version": "1.1.1.0",
-                "changelog": "improved finding local info.json files\n",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v1.1.1.0/youtube-metadata-2-youtube-horder_1.1.1.0.zip",
-                "checksum": "7401154206b2960699e20d43bed7b34e",
-                "timestamp": "2023-05-18T16:57:33Z"
-            },
-            {
-                "version": "1.1.0.2",
-                "changelog": "Minor logging additions",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v1.1.0.2/youtube-metadata-2-youtube-horder_1.1.0.2.zip",
-                "checksum": "37ae588d0b69daf77e3756e2dd5c7390",
-                "timestamp": "2023-04-11T15:08:59Z"
-            },
-            {
-                "version": "1.1.0.1",
-                "changelog": "Inital Fork + Build fix",
-                "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v1.1.0.1/youtube-metadata-2-youtube-horder_1.1.0.1.zip",
-                "checksum": "3e4a9f326569aea3610bc4ef74902902",
-                "timestamp": "2023-04-11T14:48:28Z"
-            }
-        ]
-    }
+  {
+    "guid": "5a63fe63-765f-43f7-a129-661e839f83d5",
+    "name": "SmartPlaylist2PlaylistHarder",
+    "description": "Smart Playlist 2 Playlist Harder!.\nIs a system to automatically generate playlists based on a set of rules.\nBuilt off of the base of SmartPlaylist by ankenyr.\n",
+    "overview": "Smart Playlist 2 Playlist Harder! Is a system to automatically generate playlists based on a set of rules\nBuilt off of the base of SmartPlaylist by ankenyr",
+    "owner": "JMiles42",
+    "category": "Playlist",
+    "imageUrl": "",
+    "versions": [
+      {
+        "targetAbi": "10.9.0.0",
+        "changelog": "Auto Released by Actions",
+        "timestamp": "2024-07-06T16:30:18Z",
+        "checksum": "490D0CA3B4A30D87B0427405229A0EB8",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v2024.706.1629.0/Jellyfin.SmartPlaylist@v2024.706.1629.0.zip",
+        "version": "2024.706.1629.0"
+      },
+      {
+        "version": "2.1.1.0",
+        "changelog": "Fixed json parsing - Running unit tests after a major upgrade turns out to be a good idea.\nUpdated to .net 8 and Jellyfin 10.9.0\nv2.* Changes have been made to the JSON schema, old files should still be read correctly, and when saved will use the new format.\nAdded a Jobs page to the dashboard, to allow an admin to see the status of the playlist generation, it will include errors if they failed.\nChanged TargetValue, to be one or many values. You can either have it a  single json value like a string, number or bool. Or an array of values. This allows a single Expression to match multiple values, rather then needing many single Expressions.\nAdded a MatchMode option, to allow selection of how sets of values are considered to be valid.\n  Modes are, Any, All, OnlyOne, AllButOne, None, Half, HalfOrMore, HalfOrLess.\n  Defualts \n   SmartPlaylist is Any, meaning as long as one ExpressionSet matches the item is included.\n   ExpressionSet is All, meaning all Expressions must match for the item to be included.\n   Expression is Any, meaning only one of the TargetValues must match for the item to be included.\nAdded config options to the Plugin config page.\n  Options include\n    PlaylistBatchedProcessing - Batch playlists by user and ItemKinds, allows processing of multiple playlits at once (may have performace impacts)\n    PlaylistDetailedErrors - Show the whole StackTrace of an error on the jobs details page.\n    AlwaysSaveFile - Always save the json file, when processing the playlist.\n    BackupFileOnSave - Backup files on save\n    PlaylistFolderName - Allow you to specify the folder within the Jellyfin Data folder to store playlists\n    PlaylistBackupFolderName - Allow you to specify the folder within the Jellyfin Data folder to store backups playlists\n    PlaylistSorterThreadCount - Set the thread count for how many Items are processed in parallel\n    ",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v2.1.1.0/smartplaylist2playlistharder_2.1.1.0.zip",
+        "checksum": "4c3b5c46cab6246215dfd59696e3c288",
+        "timestamp": "2024-05-16T10:03:03Z"
+      },
+      {
+        "version": "2.1.0.0",
+        "changelog": "Updated to .net 8 and Jellyfin 10.9.0\nv2.* Changes have been made to the JSON schema, old files should still be read correctly, and when saved will use the new format.\nAdded a Jobs page to the dashboard, to allow an admin to see the status of the playlist generation, it will include errors if they failed.\nChanged TargetValue, to be one or many values. You can either have it a  single json value like a string, number or bool. Or an array of values. This allows a single Expression to match multiple values, rather then needing many single Expressions.\nAdded a MatchMode option, to allow selection of how sets of values are considered to be valid.\n  Modes are, Any, All, OnlyOne, AllButOne, None, Half, HalfOrMore, HalfOrLess.\n  Defualts \n   SmartPlaylist is Any, meaning as long as one ExpressionSet matches the item is included.\n   ExpressionSet is All, meaning all Expressions must match for the item to be included.\n   Expression is Any, meaning only one of the TargetValues must match for the item to be included.\nAdded config options to the Plugin config page.\n  Options include\n    PlaylistBatchedProcessing - Batch playlists by user and ItemKinds, allows processing of multiple playlits at once (may have performace impacts)\n    PlaylistDetailedErrors - Show the whole StackTrace of an error on the jobs details page.\n    AlwaysSaveFile - Always save the json file, when processing the playlist.\n    BackupFileOnSave - Backup files on save\n    PlaylistFolderName - Allow you to specify the folder within the Jellyfin Data folder to store playlists\n    PlaylistBackupFolderName - Allow you to specify the folder within the Jellyfin Data folder to store backups playlists\n    PlaylistSorterThreadCount - Set the thread count for how many Items are processed in parallel\n    ",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v2.1.0.0/smartplaylist2playlistharder_2.1.0.0.zip",
+        "checksum": "b870d3069c422f7ca39cf76c203724e3",
+        "timestamp": "2024-05-12T11:52:56Z"
+      },
+      {
+        "version": "2.0.1.0",
+        "changelog": "v2.0.1 Added more Operand Properties\nv2.* Changes have been made to the JSON schema, old files should still be read correctly, and when saved will use the new format.\nAdded a Jobs page to the dashboard, to allow an admin to see the status of the playlist generation, it will include errors if they failed.\nChanged TargetValue, to be one or many values. You can either have it a  single json value like a string, number or bool. Or an array of values. This allows a single Expression to match multiple values, rather then needing many single Expressions.\nAdded a MatchMode option, to allow selection of how sets of values are considered to be valid.\n  Modes are, Any, All, OnlyOne, AllButOne, None, Half, HalfOrMore, HalfOrLess.\n  Defualts \n   SmartPlaylist is Any, meaning as long as one ExpressionSet matches the item is included.\n   ExpressionSet is All, meaning all Expressions must match for the item to be included.\n   Expression is Any, meaning only one of the TargetValues must match for the item to be included.\nAdded config options to the Plugin config page.\n  Options include\n    PlaylistBatchedProcessing - Batch playlists by user and ItemKinds, allows processing of multiple playlits at once (may have performace impacts)\n    PlaylistDetailedErrors - Show the whole StackTrace of an error on the jobs details page.\n    AlwaysSaveFile - Always save the json file, when processing the playlist.\n    BackupFileOnSave - Backup files on save\n    PlaylistFolderName - Allow you to specify the folder within the Jellyfin Data folder to store playlists\n    PlaylistBackupFolderName - Allow you to specify the folder within the Jellyfin Data folder to store backups playlists\n    PlaylistSorterThreadCount - Set the thread count for how many Items are processed in parallel\n    ",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v2.0.1.0/smartplaylist2playlistharder_2.0.1.0.zip",
+        "checksum": "0fc215dd5265293e53492b6d9c2a704f",
+        "timestamp": "2024-04-18T12:51:42Z"
+      },
+      {
+        "version": "2.0.0.0",
+        "changelog": "v2.* Changes have been made to the JSON schema, old files should still be read correctly, and when saved will use the new format.\nAdded a Jobs page to the dashboard, to allow an admin to see the status of the playlist generation, it will include errors if they failed.\nChanged TargetValue, to be one or many values. You can either have it a  single json value like a string, number or bool. Or an array of values. This allows a single Expression to match multiple values, rather then needing many single Expressions.\nAdded a MatchMode option, to allow selection of how sets of values are considered to be valid.\n  Modes are, Any, All, OnlyOne, AllButOne, None, Half, HalfOrMore, HalfOrLess.\n  Defualts \n   SmartPlaylist is Any, meaning as long as one ExpressionSet matches the item is included.\n   ExpressionSet is All, meaning all Expressions must match for the item to be included.\n   Expression is Any, meaning only one of the TargetValues must match for the item to be included.\nAdded config options to the Plugin config page.\n  Options include\n    PlaylistBatchedProcessing - Batch playlists by user and ItemKinds, allows processing of multiple playlits at once (may have performace impacts)\n    PlaylistDetailedErrors - Show the whole StackTrace of an error on the jobs details page.\n    AlwaysSaveFile - Always save the json file, when processing the playlist.\n    BackupFileOnSave - Backup files on save\n    PlaylistFolderName - Allow you to specify the folder within the Jellyfin Data folder to store playlists\n    PlaylistBackupFolderName - Allow you to specify the folder within the Jellyfin Data folder to store backups playlists\n    PlaylistSorterThreadCount - Set the thread count for how many Items are processed in parallel\n    ",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v2.0.0.0/smartplaylist2playlistharder_2.0.0.0.zip",
+        "checksum": "0bf0247fda0e3c4bceb33f54998c746e",
+        "timestamp": "2024-03-09T07:19:08Z"
+      },
+      {
+        "version": "1.6.3.1",
+        "changelog": "Removed IsValid from being saved into the json file\nFixed removing of OperandMember.Name from saving to json\nAdded Tags to OperandMember\nRe-added progress tracking\nAdded Tags\nFixed Timespan operations\n",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.6.3.1/smartplaylist2playlistharder_1.6.3.1.zip",
+        "checksum": "cf8e8a35e450e81ded216f8ce62041d0",
+        "timestamp": "2023-12-03T04:15:37Z"
+      },
+      {
+        "version": "1.6.3.0",
+        "changelog": "Fixed removing of OperandMember.Name from saving to json\nAdded Tags to OperandMember\nRe-added progress tracking\nAdded Tags\nFixed Timespan operations\n",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.6.3.1/smartplaylist2playlistharder_1.6.3.0.zip",
+        "checksum": "b6a2ff44ddf7fd67d0bc84193e4cbabd",
+        "timestamp": "2023-12-03T03:57:32Z"
+      },
+      {
+        "version": "1.6.2.0",
+        "changelog": "Re-added progress tracking\nAdded Tags\nFixed Timespan operations\n",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.6.2.0/smartplaylist2playlistharder_1.6.2.0.zip",
+        "checksum": "7c9194bff98d21be0cd337ee6ac189a6",
+        "timestamp": "2023-12-03T03:04:53Z"
+      },
+      {
+        "version": "1.6.1.0",
+        "changelog": "Added Tags\nFixed Timespan operations\nMoved Operators to separate files\nAdded logger to SmartPlaylistFileSystem\nRenamed Expression to SmartPlExpression so it no longer conflicts with Linq\nAdded CompiledRule type, to replace nested generics where possible\nAdded new Random Orderer, it you want a random order that is not relevent to any of the items data\nChanged DefaultTrigger from 30 minutes to 6 hours.\nAdded new IsNull operator\nImplemented MaxItems\nAdded New Operand properties\n -ParentName\n -GrandparentName\n -Container\nNote:  ParentName & GrandparentName are WIP and have only been tested with a library of episodes.",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.6.1.0/smartplaylist2playlistharder.zip",
+        "checksum": "2cdf04aedd57ac1ee06b068278b1e203",
+        "timestamp": "2023-12-03T02:35:51Z"
+      },
+      {
+        "version": "1.5.0.0",
+        "changelog": "Moved Operators to separate files\nAdded logger to SmartPlaylistFileSystem\nRenamed Expression to SmartPlExpression so it no longer conflicts with Linq\nAdded CompiledRule type, to replace nested generics where possible\nAdded new Random Orderer, it you want a random order that is not relevent to any of the items data\nChanged DefaultTrigger from 30 minutes to 6 hours.\nAdded new IsNull operator\nImplemented MaxItems\nAdded New Operand properties\n -ParentName\n -GrandparentName\n -Container\nNote:  ParentName & GrandparentName are WIP and have only been tested with a library of episodes.",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.5.0.0/smartplaylist2playlistharder.zip",
+        "checksum": "0a9d22305eb8ee0df076918ae2b7b713",
+        "timestamp": "2023-05-18T16:41:51Z"
+      },
+      {
+        "version": "1.4.0.0",
+        "changelog": "Updated Ordering",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.4.0.0/smartplaylist2playlistharder.zip",
+        "checksum": "5dbdb6611ae687cb878a4eae2656168a",
+        "timestamp": "2023-04-10T14:48:58Z"
+      },
+      {
+        "version": "1.3.0.0",
+        "changelog": "Further improvments to playlist IO, + more fields",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.3.0.0/smartplaylist2playlistharder.zip",
+        "checksum": "ac60826608e6d6658075d4de1a14321b",
+        "timestamp": "2023-04-09T07:55:32Z"
+      },
+      {
+        "version": "1.2.0.0",
+        "changelog": "Made changes to playlist IO, added days ago properties",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.2.0.0/smartplaylist2playlistharder.zip",
+        "checksum": "d02e2749fd562c5f304387dc550bed86",
+        "timestamp": "2023-04-07T12:55:40Z"
+      },
+      {
+        "version": "1.1.0.0",
+        "changelog": "Added a few new fields to use in expressions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.1.0.0/smartplaylist2playlistharder.zip",
+        "checksum": "e7fa7ec47fccebf4c6e807c1d8e898fb",
+        "timestamp": "2023-04-03T14:31:04Z"
+      },
+      {
+        "version": "1.0.0.0",
+        "changelog": " ### Code or Repo Maintenance ###\n - Inital",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v1.0.0.0/smartplaylist2playlistharder.zip",
+        "checksum": "f0ba7590b13682c770c7cb732ca13271",
+        "timestamp": "2023-04-03T09:54:36Z"
+      }
+    ]
+  },
+  {
+    "guid": "e1204173-3802-4d53-980e-9d1b851fde84",
+    "name": "YouTube Metadata 2 YouTube Horder",
+    "description": "Provides YouTube metadata from the YouTube API and Youtube-dlp metadata files.\n",
+    "overview": "YouTube metadata provider",
+    "owner": "JMiles42",
+    "category": "Metadata",
+    "versions": [
+      {
+        "version": "1.2.0.0",
+        "changelog": "Updated to .net 8 and Jellyfin 10.9.0\nimproved finding local info.json files\n",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v1.2.0.0/youtube-metadata-2-youtube-horder_1.2.0.0.zip",
+        "checksum": "eae4cabd017b061caffa9febba5276bf",
+        "timestamp": "2024-05-12T11:53:44Z"
+      },
+      {
+        "version": "1.1.1.0",
+        "changelog": "improved finding local info.json files\n",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v1.1.1.0/youtube-metadata-2-youtube-horder_1.1.1.0.zip",
+        "checksum": "7401154206b2960699e20d43bed7b34e",
+        "timestamp": "2023-05-18T16:57:33Z"
+      },
+      {
+        "version": "1.1.0.2",
+        "changelog": "Minor logging additions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v1.1.0.2/youtube-metadata-2-youtube-horder_1.1.0.2.zip",
+        "checksum": "37ae588d0b69daf77e3756e2dd5c7390",
+        "timestamp": "2023-04-11T15:08:59Z"
+      },
+      {
+        "version": "1.1.0.1",
+        "changelog": "Inital Fork + Build fix",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v1.1.0.1/youtube-metadata-2-youtube-horder_1.1.0.1.zip",
+        "checksum": "3e4a9f326569aea3610bc4ef74902902",
+        "timestamp": "2023-04-11T14:48:28Z"
+      }
+    ]
+  }
 ]

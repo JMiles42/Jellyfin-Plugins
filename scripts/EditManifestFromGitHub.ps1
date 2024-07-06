@@ -15,7 +15,7 @@
  $fileHash = Get-FileHash $filename -Algorithm MD5;
  $url = "$pluginRepoUrl/releases/download/v$version/$pluginZipName@v$version.zip";
  $newVersionEntry = @{
-     checksum   = $fileHash
+     checksum   = $fileHash.Hash
      changelog  = $changelog
      targetAbi  = $targetAbi
      sourceUrl  = $url

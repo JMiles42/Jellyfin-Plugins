@@ -17,14 +17,6 @@
         "timestamp": "2024-07-06T16:48:58Z"
       },
       {
-        "version": "2024.706.1629.0",
-        "changelog": "Auto Released by Actions",
-        "targetAbi": "10.9.0.0",
-        "checksum": "490d0ca3b4a30d87b0427405229a0eb8",
-        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v2024.706.1629.0/Jellyfin.SmartPlaylist@v2024.706.1629.0.zip",
-        "timestamp": "2024-07-06T16:30:18Z"
-      },
-      {
         "version": "2.1.1.0",
         "changelog": "Fixed json parsing - Running unit tests after a major upgrade turns out to be a good idea.\nUpdated to .net 8 and Jellyfin 10.9.0\nv2.* Changes have been made to the JSON schema, old files should still be read correctly, and when saved will use the new format.\nAdded a Jobs page to the dashboard, to allow an admin to see the status of the playlist generation, it will include errors if they failed.\nChanged TargetValue, to be one or many values. You can either have it a  single json value like a string, number or bool. Or an array of values. This allows a single Expression to match multiple values, rather then needing many single Expressions.\nAdded a MatchMode option, to allow selection of how sets of values are considered to be valid.\n  Modes are, Any, All, OnlyOne, AllButOne, None, Half, HalfOrMore, HalfOrLess.\n  Defualts \n   SmartPlaylist is Any, meaning as long as one ExpressionSet matches the item is included.\n   ExpressionSet is All, meaning all Expressions must match for the item to be included.\n   Expression is Any, meaning only one of the TargetValues must match for the item to be included.\nAdded config options to the Plugin config page.\n  Options include\n    PlaylistBatchedProcessing - Batch playlists by user and ItemKinds, allows processing of multiple playlits at once (may have performace impacts)\n    PlaylistDetailedErrors - Show the whole StackTrace of an error on the jobs details page.\n    AlwaysSaveFile - Always save the json file, when processing the playlist.\n    BackupFileOnSave - Backup files on save\n    PlaylistFolderName - Allow you to specify the folder within the Jellyfin Data folder to store playlists\n    PlaylistBackupFolderName - Allow you to specify the folder within the Jellyfin Data folder to store backups playlists\n    PlaylistSorterThreadCount - Set the thread count for how many Items are processed in parallel\n    ",
         "targetAbi": "10.9.0.0",

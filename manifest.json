@@ -151,14 +151,6 @@
         "changelog": "Auto Released by Actions",
         "targetAbi": "10.9.0.0",
         "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v1.2.0.1/Jellyfin.YoutubeMetadata@v1.2.0.1.zip",
-        "checksum": "38C169B675253C508E9988E0A623E369",
-        "timestamp": "2024-11-02T17:05:12Z"
-      },
-      {
-        "version": "1.2.0.1",
-        "changelog": "Auto Released by Actions",
-        "targetAbi": "10.9.0.0",
-        "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v1.2.0.1/Jellyfin.YoutubeMetadata@v1.2.0.1.zip",
         "checksum": "8073B20A8C27EA229821DEF527BCDED6",
         "timestamp": "2024-07-06T19:04:00Z"
       },

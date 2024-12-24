@@ -9,6 +9,14 @@
     "imageUrl": "",
     "versions": [
       {
+        "version": "2024.1224.1154",
+        "changelog": "v2.2 Adds new functionality ExpressionVars, now along side the ExpressionSets there is a dictionary, of a string key and ExpressionValue values.\\nThis is used to share the same ExpressionValue across multiple Expressions, useful when repeating large lists etc.\\nPlease see the readme.md for more detail",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-smartplaylist2playlistharder-plugin/releases/download/v2024.1224.1154/Jellyfin.SmartPlaylist@v2024.1224.1154.zip",
+        "checksum": "26D3B84E183FFBD966A32DE6BDBC33BB",
+        "timestamp": "2024-12-24T11:54:58Z"
+      },
+      {
         "version": "2024.706.1648.0",
         "changelog": "Auto Released by Actions",
         "targetAbi": "10.9.0.0",

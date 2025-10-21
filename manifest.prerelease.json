@@ -155,6 +155,14 @@
     "category": "Metadata",
     "versions": [
       {
+        "version": "2025.1021.1833",
+        "changelog": "Updates to reduce and errors calls to filesystem when downloading metadata is disabled",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v2025.1021.1833/Jellyfin.YoutubeMetadata@v2025.1021.1833.zip",
+        "checksum": "35A11EC35FD56FAB99B27B8A269F30FE",
+        "timestamp": "2025-10-21T18:33:19Z"
+      },
+      {
         "version": "1.2.0.0",
         "changelog": "Updated to .net 8 and Jellyfin 10.9.0\nimproved finding local info.json files\n",
         "targetAbi": "10.9.0.0",

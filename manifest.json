@@ -163,6 +163,14 @@
     "category": "Metadata",
     "versions": [
       {
+        "version": "1.4.0.2",
+        "changelog": "v1.4 Update to jellyfin 10.11.0",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/JMiles42/jellyfin-youtube-metadata-plugin/releases/download/v1.4.0.2/Jellyfin.YoutubeMetadata@v1.4.0.2.zip",
+        "checksum": "82AACBAAE0F63DCAC7D0BD1D3F0BAC1A",
+        "timestamp": "2025-10-21T18:55:12Z"
+      },
+      {
         "version": "1.4.0.1",
         "changelog": "v1.2 Update to jellyfin 10.11.0",
         "targetAbi": "10.11.0.0",
